@@ -1,4 +1,4 @@
-package ukr.astelit;
+package com.disfinder;
 
 import java.io.IOException;
 import java.io.InputStream;

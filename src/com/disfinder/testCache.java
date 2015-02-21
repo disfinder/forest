@@ -1,4 +1,4 @@
-package ukr.astelit;
+package com.disfinder;
 
 import net.sf.ehcache.CacheManager;
 

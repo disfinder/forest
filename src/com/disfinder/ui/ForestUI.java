@@ -1,4 +1,4 @@
-package ukr.astelit.ui;
+package com.disfinder.ui;
 
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;

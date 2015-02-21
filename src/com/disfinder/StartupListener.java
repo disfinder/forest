@@ -1,4 +1,4 @@
-package ukr.astelit;
+package com.disfinder;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import ukr.astelit.forest.cache.ForestCacheManager;
+import com.disfinder.forest.cache.ForestCacheManager;
 
 public class StartupListener implements ServletContextListener {
     private static final Log LOG = LogFactory.getLog(StartupListener.class);
@@ -26,7 +26,7 @@ public class StartupListener implements ServletContextListener {
 	Boolean isCacheFilled=(Boolean) forestCacheManager.getFromCache(Constants.IS_CACHE_FILLED_NAME);
 	LOG.debug("is cache filled:"+isCacheFilled);
 	if(isCacheFilled==null)
-	{
+	{ 
 	    LOG.debug("Fill cache...");
 	    forestCacheManager.initCache();
 	}

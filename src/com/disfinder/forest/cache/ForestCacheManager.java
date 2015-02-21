@@ -1,9 +1,6 @@
-package ukr.astelit.forest.cache;
+package com.disfinder.forest.cache;
 
 import java.net.URL;
-
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContextListener;
 
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
@@ -12,10 +9,8 @@ import net.sf.ehcache.Element;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.google.gwt.i18n.client.Constants;
-
-import ukr.astelit.forest.jenkins.model.Job;
-import ukr.astelit.forest.jenkins.model.Jobs;
+import com.disfinder.forest.jenkins.model.Job;
+import com.disfinder.forest.jenkins.model.Jobs;
 
 public final class ForestCacheManager {
     private static final Log LOG = LogFactory.getLog(ForestCacheManager.class);
@@ -64,7 +59,7 @@ public final class ForestCacheManager {
 	Element stub=new Element("Jobs", jobs);
 	cache.put(stub);
 	
-	Element init=new Element(ukr.astelit.Constants.IS_CACHE_FILLED_NAME, new Boolean(true));
+	Element init=new Element(com.disfinder.Constants.IS_CACHE_FILLED_NAME, new Boolean(true));
 	cache.put(init);
 	//Boolean isCacheFilled=(Boolean) forestCacheManager.getFromCache(IS_CACHE_FILLED_NAME);
     }
