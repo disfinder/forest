@@ -7,7 +7,7 @@ import com.disfinder.forest.jenkins.model.Jobs;
 
 public class ForestCache {
     public int a = 1;
-    private static final Log LOG = LogFactory.getLog(ForestCacheManager.class);
+    private static final Log LOG = LogFactory.getLog(ForestCache.class);
     public static ForestCache instance = new ForestCache();
     public Jobs jobs;
     

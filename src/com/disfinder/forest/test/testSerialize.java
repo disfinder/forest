@@ -10,11 +10,10 @@ import java.io.OutputStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.disfinder.forest.cache.ForestCacheManager;
 import com.disfinder.forest.jenkins.model.Jobs;
 
 public class testSerialize {
-    private static final Log LOG = LogFactory.getLog(ForestCacheManager.class);
+    private static final Log LOG = LogFactory.getLog(testSerialize.class);
 
     public static void main(String[] args) {
 	Jobs jobs=testJobsCreate.getSomeJobs(8);

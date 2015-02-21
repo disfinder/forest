@@ -10,6 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
     <listener>
-        <listener-class>ukr.astelit.StartupListener</listener-class>
+        <listener-class>com.disfinder.StartupListener</listener-class>
   </listener>
 </web-app>
