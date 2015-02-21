@@ -11,6 +11,7 @@ public class ForestCache {
     public static ForestCache instance = new ForestCache();
     public Jobs jobs;
     
+    
     private void loadFromDisk(){
 	
     }
@@ -22,6 +23,7 @@ public class ForestCache {
 	if (instance == null) {
 	    instance = new ForestCache();
 	}
+	 
 	return instance;
     }
 

@@ -1,4 +1,4 @@
-package com.disfinder.ui;
+package com.disfinder.forest.ui;
 
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +17,7 @@ import com.vaadin.ui.VerticalLayout;
 public class ForestUI extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true, initParams = {
-			@WebInitParam(name = "ui", value = "com.example.forest.ForestUI"),
+			@WebInitParam(name = "ui", value = "com.disfinder.forest.ui.ForestUI"),
 			@WebInitParam(name = "productionMode", value = "false") })
 	public static class Servlet extends VaadinServlet {
 	}
