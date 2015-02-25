@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+@Deprecated
 public class Jobs implements Serializable {
     private static final long serialVersionUID = 1L;
     public ArrayList<Job> jobsList = new ArrayList<Job>();

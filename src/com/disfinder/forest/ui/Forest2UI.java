@@ -55,7 +55,7 @@ public class Forest2UI extends UI {
 	TwinColSelect list = new TwinColSelect();
 	list.setMultiSelect(true);
 	Item i=list.addItem("First");
-	for (Job a:ForestCache.getInstance().jobs.jobsList)
+	for (Job a:ForestCache.getInstance().allJobs)
 	{
 	    list.addItem(a.name);
 	    
