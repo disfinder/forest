@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "forest2.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in forest2.scss */
+.forest2 {
+  @include addons;
+  @include forest2;
+}
